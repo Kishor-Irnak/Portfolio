@@ -15,19 +15,27 @@
       }
   </script>
     <title>Kishor Irnak Portfolio</title>
- 
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (localStorage.getItem('color-theme') === 'light' || (('color-theme' in localStorage))) {
-          document.documentElement.classList.add('dark');
-      } else {
-          document.documentElement.classList.remove('dark')
-      }
-  </script>
+
 
 </head>
 <body class="bg-white text-gray-900 dark:bg-gray-800">
+ <!-- loader -->
+ <div id="loader">
 
+<div class="spinner">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+
+<!-- Your Portfolio Content -->
+<div id="content" style="display:none;">
 <!-- drawer component -->
 <div id="drawer-contact" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
   <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -178,6 +186,21 @@
               <div class="mt-3 sm:pe-8">
                   <h3 class="text-lg font-semibold text-blue-500 dark:text-blue-500"><a href="https://kishor-irnak.github.io/SAAS_landing-page/" target="_blank">SAAS landing page v1.0.1</a></h3>
                   <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on June 04, 2025</time>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Modern and creative clean UI landing page.</p>
+              </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+              <div class="flex items-center">
+                  <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                      <svg class="w-4 h-4 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                       <path d="M8 3a3 3 0 0 0-1 5.83v6.34a3.001 3.001 0 1 0 2 0V15a2 2 0 0 1 2-2h1a5.002 5.002 0 0 0 4.927-4.146A3.001 3.001 0 0 0 16 3a3 3 0 0 0-1.105 5.79A3.001 3.001 0 0 1 12 11h-1c-.729 0-1.412.195-2 .535V8.83A3.001 3.001 0 0 0 8 3Z"/>
+                      </svg>
+                  </div>
+                  <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+              </div>
+              <div class="mt-3 sm:pe-8">
+                  <h3 class="text-lg font-semibold text-blue-500 dark:text-blue-500"><a target="_blank" href="https://kishor-irnak.github.io/Attender2.0/#">Class Management System v1.2.0</a></h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on may 3, 2024</time>
                   <p class="text-base font-normal text-gray-500 dark:text-gray-400">Attender is webapp which helps to Manage attendance,result and data.</p>
               </div>
           </li>
@@ -191,24 +214,9 @@
                   <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
               </div>
               <div class="mt-3 sm:pe-8">
-                  <h3 class="text-lg font-semibold text-blue-500 dark:text-blue-500"><a href="https://kishor-irnak.github.io/StuddyBuddy/">StuddyBuddy v1.2.0</a></h3>
-                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on may 3, 2024</time>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">it is concept app for students doubt solving.</p>
-              </div>
-          </li>
-          <li class="relative mb-6 sm:mb-0">
-              <div class="flex items-center">
-                  <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                      <svg class="w-4 h-4 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                       <path d="M8 3a3 3 0 0 0-1 5.83v6.34a3.001 3.001 0 1 0 2 0V15a2 2 0 0 1 2-2h1a5.002 5.002 0 0 0 4.927-4.146A3.001 3.001 0 0 0 16 3a3 3 0 0 0-1.105 5.79A3.001 3.001 0 0 1 12 11h-1c-.729 0-1.412.195-2 .535V8.83A3.001 3.001 0 0 0 8 3Z"/>
-                      </svg>
-                  </div>
-                  <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-              </div>
-              <div class="mt-3 sm:pe-8">
-                  <h3 class="text-lg font-semibold text-blue-500 dark:text-blue-500"><a href="https://kishor-irnak.github.io/TEXT-2-VOICE-CONVERTER/">Text-to-Speech v1.3.0</a></h3>
-                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">It is text to speech converter based on javascript.</p>
+                  <h3 class="text-lg font-semibold text-blue-500 dark:text-blue-500"><a target="_blank" href="https://kishor-irnak.github.io/Retail-Store/">Retail-Store Management v1.3.0</a></h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2025</time>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">It helps to Manage sales,inventry and expenses.</p>
               </div>
           </li>
       </ol>
@@ -267,9 +275,9 @@
                  <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
                  <div class="bg-yellow-300 h-2.5 rounded-full" style="width: 45%"></div>
                 </div>
-                <div class="mb-1 text-base font-medium text-gray-100 dark:text-gray-100">C Programming</div>
+                <div class="mb-1 text-base font-medium text-gray-400 dark:text-gray-100">C Programming</div>
                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                <div class="bg-gray-100 h-2.5 rounded-full dark:bg-gray-100" style="width: 90%"></div>
+                <div class="bg-gray-400 h-2.5 rounded-full dark:bg-gray-100" style="width: 90%"></div>
                 </div>
                   <div class="mb-1 text-base font-medium text-yellow-400 dark:text-yellow-400">Java</div>
                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
@@ -285,69 +293,92 @@
   </div>
 </section>
 
+<section class="bg-white dark:bg-gray-900 antialiased">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+        Our work
+      </h2>
+      <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+        Crafted with skill and care to help our clients grow their business!
+      </p>
+    </div>
 
-<section class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
-      
-<div class="grid  mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
-      <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
-          <p class="my-4">If you care for your time, I hands down would go with this."</p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center ">
-          <img class="rounded-full w-9 h-9" src="4.png" alt="profile picture">
-          <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-              <div>Bonnie Green</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
-          </div>
-      </figcaption>    
-  </figure>
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-      <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-          <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center ">
-          <img class="rounded-full w-9 h-9" src="3.png" alt="profile picture">
-          <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-              <div>Roberta Casas</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
-          </div>
-      </figcaption>    
-  </figure>
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
-      <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
-          <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center ">
-          <img class="rounded-full w-9 h-9" src="2.png" alt="profile picture">
-          <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-              <div>Jese Leos</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
-          </div>
-      </figcaption>    
-  </figure>
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-      <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-          <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center ">
-          <img class="rounded-full w-9 h-9" src="1.png" alt="profile picture">
-          <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-              <div>Joseph McFall</div>
-              <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
-          </div>
-      </figcaption>    
-  </figure>
-</div>
-</div>
+    <div class="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="space-y-4">
+        <span
+          class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+          Alphabet Inc.
+        </span>
+        <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+          Official website
+        </h3>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+          Flowbite helps you connect with friends, family and communities of people who share your interests.
+        </p>
+        <a href="#" title=""
+          class="text-white bg-blue-700 justify-center hover:bg-blue-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          role="button">
+          View case study
+          <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
 
+      <div class="space-y-4">
+        <span
+          class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+          Microsoft Corp.
+        </span>
+        <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+          Management system
+        </h3>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+          Flowbite helps you connect with friends, family and communities of people who share your interests.
+        </p>
+        <a href="#" title=""
+          class="text-white bg-blue-700 justify-center hover:bg-blue-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          role="button">
+          View case study
+          <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="space-y-4">
+        <span
+          class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+          Adobe Inc.
+        </span>
+        <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+          Logo design
+        </h3>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+          Flowbite helps you connect with friends, family and communities of people who share your interests.
+        </p>
+        <a href="#" title=""
+          class="text-white bg-blue-700 justify-center hover:bg-blue-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          role="button">
+          View case study
+          <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
@@ -372,7 +403,29 @@
 
 
 
+</div>
+<script>
+// Wait for the page to fully load
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
 
+  // Keep loader visible for 2 seconds (for testing)
+  setTimeout(() => {
+    // Fade-out effect (optional)
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 0.5s ease";
+
+    // After the fade, hide loader and show content
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.style.display = "block";
+    }, 500); // Wait for fade animation to finish
+  }, 1500); // Show loader for 2 seconds
+});
+
+
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="main.js"></script>  
 </body>
