@@ -11,8 +11,7 @@ It’s designed to showcase my projects, skills, and achievements in a clean, mo
 
 📸 Preview
 Live Demo:
-🌐 Portfolio Website
-
+🌐 https://kishor-irnak.github.io/Portfolio/
 🛠️ Tech Stack
 HTML5 & Tailwind CSS
 
